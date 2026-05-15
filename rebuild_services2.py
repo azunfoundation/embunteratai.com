@@ -1,59 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services & Therapies — Embun Teratai</title>
-  <meta name="description" content="Explore our premium postnatal recovery services including traditional massage, lactation support, herbal therapies, and nourishing cuisine.">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="subpage">
-  <header class="header" id="header">
-    <div class="nav-inner">
-      <!-- Logo -->
-      <a href="index.html" class="logo">
-        <img src="assets/images/embun-logo.png" alt="Embun Teratai" class="header-logo">
-      </a>
-      <!-- Center nav pill -->
-      <nav class="nav-pill" id="navLinks">
-        <a href="index.html" >Home</a>
-        <span class="nav-divider"></span>
-        <a href="about.html">About</a>
-        <span class="nav-divider"></span>
-        <div class="nav-item dropdown">
-          <a href="#">Rooms</a>
-          <ul class="dropdown-menu">
-            <li><a href="rooms-mother.html">Our Rooms for Mother</a></li>
-            <li><a href="rooms-baby.html">Our Rooms for Baby</a></li>
-          </ul>
-        </div>
-        <span class="nav-divider"></span>
-        <a href="services.html" class="active">Services</a>
-        <span class="nav-divider"></span>
-        <a href="pricing.html">Pricing</a>
-      </nav>
-      <!-- Right CTA -->
-      <div class="nav-right">
-        <a href="contact.html" class="btn btn-nav-ghost">Contact</a>
-        <a href="booking.html" class="btn btn-nav-solid">Book Now</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-nav" id="mobileNav">
-    <button class="mobile-nav-close" id="mobileNavClose">✕</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="rooms-mother.html">Rooms — Mother</a>
-    <a href="rooms-baby.html">Rooms — Baby</a>
-    <a href="services.html" class="active" >Services</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
-    <a href="booking.html" class="btn btn-primary" style="margin-top:20px;text-align:center;">Book Now</a>
-  </div>
-  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+with open(r'c:\embunteratai.com\services.html', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Find anchor points
+header_end_marker = 'id="mobileNavOverlay"></div>'
+footer_start_marker = '<footer class="footer">'
+script_start_marker = '  <script>'
+
+header_end = content.find(header_end_marker) + len(header_end_marker)
+footer_start = content.find(footer_start_marker)
+script_section = content[content.rfind(script_start_marker):]
+
+header_part = content[:header_end]
+footer_part = content[footer_start:]
+
+new_body = r"""
 
   <!-- ═══ FULL-SCREEN HERO ═══ -->
   <section class="sv-hero">
@@ -376,55 +337,11 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html"><img src="assets/images/embun-logo.png" alt="Embun Teratai" class="footer-logo-img"></a>
-          <p>Experience luxury postnatal care designed to restore your body, mind, and spirit.</p>
-          <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61583503971828">Fb</a>
-            <a href="https://www.instagram.com/embun_teratai/">Ig</a>
-          </div>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html" class="active" >Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html" class="active" >Postnatal Massage</a></li>
-            <li><a href="services.html" class="active" >Herbal Bath</a></li>
-            <li><a href="services.html" class="active" >Bertungku / Tuam</a></li>
-            <li><a href="services.html" class="active" >Lactation Support</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get In Touch</h4>
-          <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Empire Damansara, PJ, Selangor</div>
-          <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>(+60) 386878421</div>
-          <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>embunmother@gmail.com</div>
-        </div>
-      </div>
-      <div class="footer-bottom"><p>© 2026 Embun Teratai. All rights reserved.</p><p>Petaling Jaya, Selangor, Malaysia</p></div>
-    </div>
-  </footer>
+  """
 
-  <script>
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => { header.classList.toggle('at-top', window.scrollY < 60); });
-    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('active'); });
-  
-    
-  
-    
-  </script>
-</body>
-</html>
+new_content = header_part + new_body + footer_part
+
+with open(r'c:\embunteratai.com\services.html', 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print('Done! services.html rewritten.')
