@@ -7,100 +7,243 @@
   <meta name="description" content="Explore our dedicated 24/7 nursery and baby care facilities at Embun Teratai Postnatal Confinement Centre.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="subpage">
   <header class="header" id="header">
-    <div class="container nav">
-      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Embun Teratai" class="header-logo"></a>
-      <button class="nav-toggle" id="navToggle">☰</button>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="assets/images/embun-logo.png" alt="Embun Teratai" class="header-logo">
+      </a>
+      <!-- Center nav pill -->
+      <nav class="nav-pill" id="navLinks">
+        <a href="index.html" >Home</a>
+        <span class="nav-divider"></span>
         <a href="about.html">About</a>
+        <span class="nav-divider"></span>
         <div class="nav-item dropdown">
-          <a href="#" style="cursor:default;" class="active">Rooms +</a>
+          <a href="#">Rooms</a>
           <ul class="dropdown-menu">
             <li><a href="rooms-mother.html">Our Rooms for Mother</a></li>
-            <li><a href="rooms-baby.html" style="color:var(--gold);">Our Rooms for Baby</a></li>
+            <li><a href="rooms-baby.html" class="active">Our Rooms for Baby</a></li>
           </ul>
         </div>
+        <span class="nav-divider"></span>
         <a href="services.html">Services</a>
+        <span class="nav-divider"></span>
         <a href="pricing.html">Pricing</a>
-        <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
       </nav>
+      <!-- Right CTA -->
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-nav-ghost">Contact</a>
+        <a href="booking.html" class="btn btn-nav-solid">Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <div class="page-hero">
-    <div class="container">
-      <span class="label">Dedicated Newborn Care</span>
-      <h1>Our Rooms for Baby</h1>
-      <p class="section-subtitle">A highly sterilized, secure, and nurturing environment for your newborn's first days.</p>
-    </div>
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms-mother.html">Rooms — Mother</a>
+    <a href="rooms-baby.html" class="active" >Rooms — Baby</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:20px;text-align:center;">Book Now</a>
   </div>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+
+  <!-- ─── PAGE HERO ─── -->
+  <section class="rm-hero">
+    <div class="rm-hero-img">
+      <img src="images/Embun & Teratai/baby/babybeds.jpg" alt="Baby nursery at Embun Teratai">
+      <div class="rm-hero-overlay" style="background:linear-gradient(135deg,rgba(10,8,5,0.75) 0%,rgba(30,20,10,0.4) 55%,rgba(10,8,5,0.25) 100%);"></div>
+    </div>
+    <div class="rm-hero-content container">
+      <span class="label" style="color:var(--gold-light);">Dedicated Newborn Nursery</span>
+      <h1>Our Rooms<br><em>for Baby</em></h1>
+      <p>A safe, sterile, and serene sanctuary — where your precious newborn is cared for with expert hands and a loving heart.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a href="booking.html" class="btn btn-primary">Book Your Stay</a>
+        <a href="services.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INTRO ─── -->
+  <section class="section" style="padding-bottom:48px;">
+    <div class="container text-center">
+      <span class="label">Expert Newborn Care</span>
+      <h2 class="section-title">A Nursery Designed<br>with Love & Science</h2>
+      <p class="section-subtitle">Our dedicated baby wing combines clinical-grade hygiene protocols with a warm, nurturing atmosphere — so your newborn is safe, comfortable, and thriving.</p>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE ROW 1: NURSERY OVERVIEW ─── -->
+  <section class="rm-feature section" style="padding-top:0;">
+    <div class="container">
+      <div class="rm-feature-row">
+        <div class="rm-feature-img">
+          <img src="images/Embun & Teratai/baby/baby-beds.jpg" alt="Premium baby beds in Embun Teratai nursery">
+        </div>
+        <div class="rm-feature-text">
+          <span class="label">24/7 Professional Care</span>
+          <h2>Round-the-Clock<br>Expert Nursery</h2>
+          <p>Our nursery is staffed by certified paediatric nurses who monitor every newborn through the night so you can rest, heal, and recover with complete peace of mind.</p>
+          <ul class="rm-checklist">
+            <li><span class="rm-check">✓</span> Certified nurses on duty 24 hours a day</li>
+            <li><span class="rm-check">✓</span> In-house Paediatrician reviews & consultations</li>
+            <li><span class="rm-check">✓</span> Daily baby weight and feeding tracking</li>
+            <li><span class="rm-check">✓</span> Medical-grade air purification system</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE ROW 2: SAFETY & HYGIENE ─── -->
+  <section class="rm-feature section section-alt" style="padding:80px 0;">
+    <div class="container">
+      <div class="rm-feature-row reverse">
+        <div class="rm-feature-img">
+          <img src="images/Embun & Teratai/baby/baby--beds.jpg" alt="Sanitized baby beds and cots at Embun Teratai">
+        </div>
+        <div class="rm-feature-text">
+          <span class="label">Safety & Hygiene First</span>
+          <h2>Clinically Clean,<br>Deeply Caring</h2>
+          <p>Every surface, every cot, and every piece of equipment in our nursery is subject to rigorous sterilization. We follow strict hygiene protocols to protect your newborn's delicate immune system at every moment.</p>
+          <ul class="rm-checklist">
+            <li><span class="rm-check">✓</span> Hospital-grade sterilization of all equipment</li>
+            <li><span class="rm-check">✓</span> 24-hour CCTV monitoring throughout nursery</li>
+            <li><span class="rm-check">✓</span> Secure, restricted-access nursery wing</li>
+            <li><span class="rm-check">✓</span> Premium Nappico chemical-free diapers provided</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE ROW 3: BONDING & BREASTFEEDING ─── -->
+  <section class="rm-feature section" style="padding:80px 0;">
+    <div class="container">
+      <div class="rm-feature-row">
+        <div class="rm-feature-img">
+          <img src="images/Embun & Teratai/baby/AFS_0084.jpg" alt="Mother and baby bonding at Embun Teratai">
+        </div>
+        <div class="rm-feature-text">
+          <span class="label">Bonding & Breastfeeding</span>
+          <h2>Support for Your<br>Precious Bond</h2>
+          <p>Our nurses are trained in breastfeeding support, infant feeding schedules, and newborn behavioral cues — helping you build a confident, nurturing bond with your baby from the very first days.</p>
+          <ul class="rm-checklist">
+            <li><span class="rm-check">✓</span> Dedicated lactation consultant support</li>
+            <li><span class="rm-check">✓</span> Structured feeding schedules & guidance</li>
+            <li><span class="rm-check">✓</span> Skin-to-skin bonding sessions facilitated</li>
+            <li><span class="rm-check">✓</span> Daily newborn bathing demonstrations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CARE HIGHLIGHTS GRID ─── -->
+  <section class="section section-alt" style="padding:80px 0;">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:56px;">
+        <span class="label">What We Provide</span>
+        <h2 class="section-title">Complete Newborn Care</h2>
+        <p class="section-subtitle">Everything your baby needs is covered — so you can focus entirely on recovery and bonding.</p>
+      </div>
+      <div class="rb-care-grid">
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2"/><path d="M14 5a2 2 0 0 1 2 2v10a4 4 0 0 1-8 0V7a2 2 0 0 1 2-2Z"/><path d="M8 11h8"/></svg></div>
+          <h4>Feeding Support</h4>
+          <p>Expert guidance on breastfeeding, formula preparation, and structured feeding schedules tailored to your newborn.</p>
+        </div>
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></div>
+          <h4>Vital Monitoring</h4>
+          <p>Continuous temperature, weight, and hydration tracking by our medical team to ensure healthy development.</p>
+        </div>
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <h4>Daily Baby Baths</h4>
+          <p>Gentle herbal baby baths administered by our nurses, plus step-by-step tutorials so you feel confident at home.</p>
+        </div>
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h4>Newborn Vaccinations</h4>
+          <p>Coordination with our in-house paediatrician for all scheduled newborn vaccinations and health checks.</p>
+        </div>
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+          <h4>Premium Baby Products</h4>
+          <p>We exclusively use organic, chemical-free Nappico diapers and hypoallergenic skin products for your newborn.</p>
+        </div>
+
+        <div class="rb-care-card">
+          <div class="rb-care-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></div>
+          <h4>Lactation Consulting</h4>
+          <p>One-on-one sessions with a certified lactation consultant to help establish a successful, comfortable breastfeeding journey.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
   <section class="section">
     <div class="container">
-      <div class="feature-row">
-        <div class="feature-img-wrap" style="height:400px; width:100%; border-radius:var(--r-xl); overflow:hidden;">
-          <video src="assets/videos/centre-video-2.mp4" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
-          <div class="feature-img-accent"></div>
-        </div>
-        <div class="feature-content">
-          <span class="label">24/7 Nursery</span>
-          <h2>Professional Medical Care</h2>
-          <p>Our dedicated baby nursery is equipped with state-of-the-art air purification systems, medical-grade monitoring, and strict hygiene protocols. Your baby is cared for by certified nurses round the clock.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 24/7 dedicated newborn care</li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> In-house Paediatrician reviews</li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Daily tracking of baby's weight and feeding</li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Strict sanitization and visitor protocols</li>
-          </ul>
-        </div>
+      <div class="text-center" style="margin-bottom:56px;">
+        <span class="label">Our Nursery</span>
+        <h2 class="section-title">Gallery</h2>
       </div>
-
-      <div class="feature-row reverse" style="margin-top:80px;">
-        <div class="feature-img-wrap">
-          <img src="assets/images/real-facility-1.jpg" alt="Baby nursery at Embun Teratai">
-          <div class="feature-img-accent"></div>
+      <div class="rb-gallery">
+        <div class="rb-gal-item rb-gal-wide">
+          <img src="images/Embun & Teratai/baby/babybeds8.jpg" alt="Nursery overview">
         </div>
-        <div class="feature-content">
-          <span class="label">Peace of Mind</span>
-          <h2>Secure & Monitored</h2>
-          <p>We understand the anxiety of new mothers. That's why our baby care rooms are equipped with comprehensive security measures, ensuring complete peace of mind while you rest in your suite.</p>
-          <ul class="feature-list">
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 24-hour CCTV monitoring</li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Secure access to the nursery wing</li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Premium, chemical-free Nappico diapers provided</li>
-          </ul>
+        <div class="rb-gal-item">
+          <img src="images/Embun & Teratai/baby/AFS_0085.jpg" alt="Baby nursery detail">
+        </div>
+        <div class="rb-gal-item">
+          <img src="images/Embun & Teratai/baby/AFS_0086.jpg" alt="Baby care at Embun Teratai">
+        </div>
+        <div class="rb-gal-item">
+          <img src="images/Embun & Teratai/baby/AFS_0091.jpg" alt="Newborn at Embun Teratai">
+        </div>
+        <div class="rb-gal-item rb-gal-wide">
+          <img src="images/Embun & Teratai/baby/baby-beds.jpg" alt="Rows of baby cots in clean nursery">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" style="padding:60px 0;">
-    <div class="container text-center">
-      <h2 style="margin-bottom:40px; color:var(--brown-dark);">Gallery</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
-        <img src="assets/images/real-facility-2.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:var(--r-md);" alt="Facility view">
-        <img src="assets/images/real-facility-3.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:var(--r-md);" alt="Facility interior">
-        <img src="assets/images/real-facility-4.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:var(--r-md);" alt="Facility details">
-      </div>
-    </div>
-  </section>
-
+  <!-- ─── CTA BANNER ─── -->
   <section class="cta-banner">
     <div class="container">
-      <span class="label" style="color:var(--gold-light);">Begin Your Recovery</span>
-      <h2>A Sanctuary Awaits You</h2>
-      <p>Let us take care of every detail while you focus on healing and bonding with your precious new baby.</p>
-      <a href="contact.html" class="btn btn-white">Book a Consultation</a>
+      <span class="label" style="color:var(--gold-light);">Give Your Baby the Best Start</span>
+      <h2>Expert Care from Day One</h2>
+      <p>Let our team of dedicated nurses and specialists care for your newborn while you rest, heal, and recover.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="booking.html" class="btn btn-white">Book Your Stay</a>
+        <a href="pricing.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">See Pricing</a>
+      </div>
     </div>
   </section>
+
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html"><img src="assets/images/logo.png" alt="Embun Teratai" class="footer-logo-img"></a>
+          <a href="index.html"><img src="assets/images/embun-logo.png" alt="Embun Teratai" class="footer-logo-img"></a>
           <p>Experience luxury postnatal care designed to restore your body, mind, and spirit.</p>
           <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=61583503971828" aria-label="Facebook">Fb</a>
@@ -140,6 +283,10 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => { header.classList.toggle('at-top', window.scrollY < 60); });
     document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('active'); });
+  
+    
+  
+    
   </script>
 </body>
 </html>

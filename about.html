@@ -7,31 +7,55 @@
   <meta name="description" content="Discover the sanctuary of Embun Teratai. Learn about our luxury postnatal confinement centre and dedicated medical wellness team.">
   <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
-<body>
+<body class="subpage">
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="nav-inner">
+      <!-- Logo -->
       <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Embun Teratai Logo" class="header-logo">
+        <img src="assets/images/embun-logo.png" alt="Embun Teratai" class="header-logo">
       </a>
-      <button class="nav-toggle">☰</button>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
+      <!-- Center nav pill -->
+      <nav class="nav-pill" id="navLinks">
+        <a href="index.html" >Home</a>
+        <span class="nav-divider"></span>
         <a href="about.html" class="active">About</a>
+        <span class="nav-divider"></span>
         <div class="nav-item dropdown">
-          <a href="#" style="cursor:default;">Rooms +</a>
+          <a href="#">Rooms</a>
           <ul class="dropdown-menu">
             <li><a href="rooms-mother.html">Our Rooms for Mother</a></li>
             <li><a href="rooms-baby.html">Our Rooms for Baby</a></li>
           </ul>
         </div>
+        <span class="nav-divider"></span>
         <a href="services.html">Services</a>
+        <span class="nav-divider"></span>
         <a href="pricing.html">Pricing</a>
-        <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
       </nav>
+      <!-- Right CTA -->
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-nav-ghost">Contact</a>
+        <a href="booking.html" class="btn btn-nav-solid">Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
     </div>
   </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active" >About</a>
+    <a href="rooms-mother.html">Rooms — Mother</a>
+    <a href="rooms-baby.html">Rooms — Baby</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:20px;text-align:center;">Book Now</a>
+  </div>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
   <!-- Page Header -->
   <section class="hero section-bg" style="padding-top: 150px; padding-bottom: 80px; display: block; min-height: auto;">
@@ -81,7 +105,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html"><img src="assets/images/logo.png" alt="Embun Teratai" class="footer-logo-img"></a>
+          <a href="index.html"><img src="assets/images/embun-logo.png" alt="Embun Teratai" class="footer-logo-img"></a>
           <p>Experience luxury postnatal care designed to restore your body, mind, and spirit.</p>
           <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=61583503971828" aria-label="Facebook">Fb</a>
@@ -92,7 +116,7 @@
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html" class="active" >About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -122,6 +146,10 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => { header.classList.toggle('at-top', window.scrollY < 60); });
     document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('active'); });
+  
+    
+  
+    
   </script>
 </body>
 </html>
