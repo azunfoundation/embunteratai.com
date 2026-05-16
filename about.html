@@ -145,7 +145,24 @@
   <script>
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => { header.classList.toggle('at-top', window.scrollY < 60); });
-    document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('active'); });
+        // Mobile nav drawer
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileOverlay = document.getElementById('mobileNavOverlay');
+    const openBtn = document.getElementById('navToggle');
+    const closeBtn = document.getElementById('mobileNavClose');
+    function openMobileNav() {
+      mobileNav.classList.add('active');
+      mobileOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileNav() {
+      mobileNav.classList.remove('active');
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    openBtn.addEventListener('click', openMobileNav);
+    closeBtn.addEventListener('click', closeMobileNav);
+    mobileOverlay.addEventListener('click', closeMobileNav);
   
     
   
