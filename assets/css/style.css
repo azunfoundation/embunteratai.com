@@ -1992,3 +1992,105 @@ textarea.form-control{min-height:130px;resize:vertical;}
   .pr-photo-strip { height: 160px; }
   .pr-included-grid { grid-template-columns: 1fr; }
 }
+
+/* -------------------------------------------------------
+   HOMEPAGE — MOBILE RESPONSIVE  (768px and below only)
+   Desktop styles are NOT changed
+------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* General Section Spacing */
+  .section { padding: 56px 0; }
+  .section-alt { padding: 56px 0; }
+  .feature-section { padding: 56px 0; }
+  .container { padding: 0 20px; }
+
+  /* Section headings */
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); line-height: 1.2; }
+  .section-subtitle { font-size: 0.95rem; }
+
+  /* Hero Full Screen */
+  .hero-fs-content {
+    text-align: center;
+    padding: 0 0 120px;
+    max-width: 100%;
+  }
+  .hero-fs-badge { font-size: 0.68rem; justify-content: center; }
+  .hero-fs-title { font-size: clamp(2rem, 7.5vw, 3rem); line-height: 1.15; }
+  .hero-fs-desc { font-size: 0.95rem; margin: 0 auto 28px; max-width: 340px; }
+  .hero-fs-cta { flex-direction: column; align-items: stretch; gap: 12px; }
+  .btn-hero-solid, .btn-hero-outline { text-align: center; width: 100%; }
+
+  /* Pillar Cards */
+  .pillars-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
+  .pillar-card { padding: 28px 24px; }
+  .pillar-card h3 { font-size: 1.1rem; }
+  .pillar-list li { font-size: 0.9rem; }
+
+  /* Feature Rows */
+  .feature-row { grid-template-columns: 1fr; gap: 32px; margin-bottom: 56px; }
+  .feature-row.reverse { direction: ltr; }
+  .feature-row.reverse > * { direction: ltr; }
+  .feature-img-wrap img { height: 280px; object-fit: cover; border-radius: 16px; }
+  .feature-img-accent { display: none; }
+  .feature-content h2 { font-size: clamp(1.5rem, 5.5vw, 2rem); margin-bottom: 12px; }
+  .feature-content p { font-size: 0.95rem; }
+  .feature-list li { font-size: 0.9rem; }
+  .feature-cta .btn { width: 100%; text-align: center; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
+  .testimonial-card { padding: 28px 24px; }
+  .testimonial-card p { font-size: 0.95rem; }
+
+  /* Photo Gallery */
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; gap: 8px; }
+  .gallery-item.tall, .gallery-item.portrait { grid-row: span 1; }
+  .gallery-caption { font-size: 0.75rem; padding: 6px 10px; }
+
+  /* CTA Banner */
+  .cta-banner { padding: 64px 24px; text-align: center; }
+  .cta-banner h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); margin-bottom: 12px; }
+  .cta-banner p { font-size: 0.95rem; }
+  .cta-banner .btn { width: 100%; max-width: 320px; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
+}
+
+/* Narrow phones (480px and below) */
+@media (max-width: 480px) {
+  .hero-fs-title { font-size: clamp(1.75rem, 8vw, 2.4rem); }
+  .hero-fs-desc { font-size: 0.88rem; }
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 200px; }
+  .gallery-item.tall, .gallery-item.portrait { grid-row: span 1; }
+  .pillar-card { padding: 24px 20px; }
+  .section-title { font-size: clamp(1.4rem, 7vw, 1.9rem); }
+  .testimonials-grid { gap: 12px; }
+}
+
+/* -- Fix: Hero content must start BELOW the fixed nav on mobile -- */
+@media (max-width: 768px) {
+  .hero-fs {
+    align-items: flex-start;
+  }
+  .hero-fs-inner {
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 100px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .hero-fs-content {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .hero-fs-cta {
+    justify-content: center;
+  }
+}
