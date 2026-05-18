@@ -1188,6 +1188,15 @@ textarea.form-control{min-height:130px;resize:vertical;}
   z-index: 2;
   color: #fff;
   max-width: 680px;
+  width: 100%;
+  margin-left: max(32px, calc((100vw - 1200px)/2 + 32px));
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .sv-hero-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .sv-hero-content h1 {
   font-family: var(--font-h);
