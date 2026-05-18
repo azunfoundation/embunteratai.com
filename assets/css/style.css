@@ -218,7 +218,7 @@ img{max-width:100%;height:auto;display:block;}
   width: 100%;
   height: 100vh;
   min-height: 620px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
@@ -748,7 +748,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
   min-height: 600px;
   display: flex;
   align-items: center;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .rm-hero-img {
   position: absolute;
@@ -806,7 +806,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 
 .rm-feature-img {
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   aspect-ratio: 4/3;
   box-shadow: var(--shadow-lg);
 }
@@ -862,7 +862,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .rm-amenity-card {
   background: var(--white);
   border-radius: var(--r-lg);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: var(--ease);
 }
@@ -872,7 +872,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 }
 .rm-amenity-img {
   height: 200px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .rm-amenity-img img {
   width: 100%;
@@ -1024,7 +1024,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
   gap: 2px;
   background: var(--border);
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   box-shadow: var(--shadow-md);
 }
 .sv-pillar {
@@ -1068,7 +1068,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .sv-tg-item {
   position: relative;
   border-radius: var(--r-md);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-tg-item.sv-tg-tall {
   grid-row: span 2;
@@ -1101,12 +1101,12 @@ textarea.form-control{min-height:130px;resize:vertical;}
   grid-template-columns: 1.6fr 1fr;
   gap: 12px;
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
 .sv-food-main {
   height: 480px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-food-main img {
   width: 100%;
@@ -1161,7 +1161,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
   min-height: 640px;
   display: flex;
   align-items: center;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-hero-bg {
   position: absolute;
@@ -1278,7 +1278,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .sv-card {
   background: var(--white);
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: var(--ease);
   display: flex;
@@ -1291,7 +1291,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .sv-card-img {
   position: relative;
   height: 220px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-card-img img {
   width: 100%;
@@ -1362,7 +1362,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
   min-height: 560px;
 }
 .sv-split-img {
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-split-img img {
   width: 100%;
@@ -1423,7 +1423,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .sv-gb-main {
   position: relative;
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-gb-main img {
   width: 100%;
@@ -1440,7 +1440,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .sv-gb-item {
   position: relative;
   border-radius: var(--r-lg);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-gb-item img {
   width: 100%;
@@ -1493,10 +1493,10 @@ textarea.form-control{min-height:130px;resize:vertical;}
   gap: 12px;
   height: 560px;
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-cm-large {
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .sv-cm-large img {
   width: 100%;
@@ -1630,7 +1630,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .pr-card {
   background: var(--white);
   border-radius: var(--r-xl);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
@@ -1663,7 +1663,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 }
 .pr-card-img {
   height: 200px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .pr-card-img img {
   width: 100%;
@@ -1796,7 +1796,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 .pr-photo-strip {
   display: flex;
   height: 240px;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .pr-photo-strip img {
   width: 20%;
@@ -1923,7 +1923,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
   border: 1px solid var(--border);
   border-radius: var(--r-md);
   background: var(--white);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
 }
 .faq-question {
   width: 100%;
@@ -1951,7 +1951,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 }
 .faq-answer {
   max-height: 0;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   transition: max-height 0.4s ease;
 }
 .faq-answer p {
