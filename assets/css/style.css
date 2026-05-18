@@ -546,7 +546,7 @@ img{max-width:100%;height:auto;display:block;}
 }
 .gallery-item {
   position: relative;
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   border-radius: 16px;
   cursor: pointer;
 }
@@ -905,7 +905,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 }
 .rm-gal-item {
   border-radius: var(--r-md);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   height: 260px;
 }
 .rm-gal-item.rm-gal-wide {
@@ -986,7 +986,7 @@ textarea.form-control{min-height:130px;resize:vertical;}
 }
 .rb-gal-item {
   border-radius: var(--r-md);
-  overflow-y: auto; overflow-x: hidden;
+  overflow: hidden;
   height: 280px;
 }
 .rb-gal-item.rb-gal-wide {
